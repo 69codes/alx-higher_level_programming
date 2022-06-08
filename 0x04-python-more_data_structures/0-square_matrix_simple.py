@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-def square(k):
-    return [i**2 for i in k]
-def square_matrix(n):
-    return list(map(square, n))
+def square_matrix_simple(matrix=[]):
+    new_matrix = [[x ** 2 for x in row] for row in matrix]
+    return new_matrix
